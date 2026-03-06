@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <!-- Slim::pod::vector<T> -->
+  <Type Name="Slim::pod::vector&lt;*&gt;">
+    <DisplayString>{{ size={m_uVecLen}, capacity={m_uVecCap} }}</DisplayString>
+    <Expand>
+      <Item Name="[size]">m_uVecLen</Item>
+      <Item Name="[capacity]">m_uVecCap</Item>
+      <Item Name="[empty]">m_uVecLen == 0</Item>
+      <Item Name="[element_size]">m_uByteLen</Item>
+      <IndexListItems>
+        <Size>m_uVecLen</Size>
+        <ValueNode>(($T1*)m_pData)[$i]</ValueNode>
+      </IndexListItems>
+    </Expand>
+  </Type>
+
+  <!-- Slim::pod::detail::vector_base -->
+  <Type Name="Slim::pod::detail::vector_base" Inheritable="false">
+    <DisplayString>size={m_uVecLen}, capacity={m_uVecCap}</DisplayString>
+    <Expand>
+      <Item Name="size">m_uVecLen</Item>
+      <Item Name="capacity">m_uVecCap</Item>
+      <Item Name="element_size">m_uByteLen</Item>
+      <Item Name="empty">m_uVecLen == 0</Item>
+      <Item Name="data_ptr">m_pData</Item>
+      <Item Name="extra_alignment">1 &lt;&lt; ((m_uExtra &gt;&gt; 0) &amp; 0xF)</Item>
+      <Item Name="extra_reserved">(m_uExtra &gt;&gt; 4) &amp; 0xF</Item>
+      <Item Name="extra_fixed_buffer_len">(m_uExtra &gt;&gt; 8) &amp; 0xFF</Item>
+      <Item Name="is_SOO">m_pData == ((char*)(this + 1))</Item>
+    </Expand>
+  </Type>
+
+  <!-- Slim::pod::vector_soo<T, SOO_LEN> -->
+  <Type Name="Slim::pod::vector_soo&lt;*,*&gt;">
+    <DisplayString>{{ size={m_uVecLen}, capacity={m_uVecCap}, SOO_LEN={$T2} }}</DisplayString>
+    <Expand>
+      <Item Name="[size]">m_uVecLen</Item>
+      <Item Name="[capacity]">m_uVecCap</Item>
+      <Item Name="[empty]">m_uVecLen == 0</Item>
+      <Item Name="[element_size]">m_uByteLen</Item>
+      <Item Name="[SOO_LEN]">$T2</Item>
+      <IndexListItems>
+        <Size>m_uVecLen</Size>
+        <ValueNode>(($T1*)m_pData)[$i]</ValueNode>
+      </IndexListItems>
+    </Expand>
+  </Type>
+
+  <!-- Slim::pod::detail::base_iterator<V, Ptr> -->
+  <Type Name="Slim::pod::detail::base_iterator&lt;*,*&gt;">
+    <DisplayString>iterator pointing to {m_ptr}</DisplayString>
+    <Expand>
+      <Item Name="ptr">m_ptr</Item>
+      <Item Name="value">*m_ptr</Item>
+    </Expand>
+  </Type>
+</AutoVisualizer>

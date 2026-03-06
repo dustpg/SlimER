@@ -1,0 +1,7 @@
+- [vulkan] share static samplers between pipeline layout
+- [vulkan] fallback for push descriptor
+- [vulkan] PresentFrame(syncInterval)
+- [vulkan] VK_SUBOPTIMAL_KHR/VK_ERROR_OUT_OF_DATE_KHR/swapchain_maintenance1/{0, 0}
+- [vulkan] multiple-queue/lock
+- [vulkan] graphics-queue != present-queue
+

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6b3d2528-921a-422d-abf9-ec34cb6575ca}</ProjectGuid>
+    <RootNamespace>graphics</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);DHRI_VECTOR_SIZE_USE_UINT32</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;$(VULKAN_SDK)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>26812</DisableSpecificWarnings>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)\Lib32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);DHRI_VECTOR_SIZE_USE_UINT32</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;$(VULKAN_SDK)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>26812</DisableSpecificWarnings>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)\Lib32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);DHRI_VECTOR_SIZE_USE_UINT32</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;$(VULKAN_SDK)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>26812</DisableSpecificWarnings>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);DHRI_VECTOR_SIZE_USE_UINT32</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;$(VULKAN_SDK)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>26812</DisableSpecificWarnings>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VULKAN_SDK)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="include\rhi\er_swapchain.h" />
+    <ClCompile Include="source\rhi\common\er_base_mutex.cpp" />
+    <ClCompile Include="source\rhi\common\er_blob.cpp" />
+    <ClCompile Include="source\rhi\common\er_pod_vector.cpp" />
+    <ClCompile Include="source\rhi\common\er_rhi_common.cpp" />
+    <ClCompile Include="source\rhi\common\er_shader_compiler_dxc3.cpp" />
+    <ClCompile Include="source\rhi\common\er_system_win.cpp" />
+    <ClCompile Include="source\rhi\d3d12\er_backend_d3d12.cpp" />
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_adapter.cpp" />
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_command.cpp" />
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_descriptor.cpp" />
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_device.cpp" />
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_pipeline.cpp" />
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_resource.cpp" />
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_swapchain.cpp" />
+    <ClCompile Include="source\rhi\d3d12\er_rhi_d3d12.cpp" />
+    <ClCompile Include="source\rhi\er_instance.cpp" />
+    <ClCompile Include="source\rhi\vulkan\er_rhi_vulkan.cpp" />
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_adapter.cpp" />
+    <ClCompile Include="source\rhi\vulkan\er_backend_vulkan.cpp" />
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_command.cpp" />
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_descriptor.cpp" />
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_device.cpp" />
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_pipeline.cpp" />
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_resource.cpp" />
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_swapchain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\rhi\er_adapter.h" />
+    <ClInclude Include="include\rhi\er_base.h" />
+    <ClInclude Include="include\rhi\er_command.h" />
+    <ClInclude Include="include\rhi\er_descriptor.h" />
+    <ClInclude Include="include\rhi\er_device.h" />
+    <ClInclude Include="include\rhi\er_include_all.h" />
+    <ClInclude Include="include\rhi\er_instance.h" />
+    <ClInclude Include="include\rhi\er_pipeline.h" />
+    <ClInclude Include="include\rhi\er_resource.h" />
+    <ClInclude Include="include\rhi\er_shader_compiler.h" />
+    <ClInclude Include="source\rhi\common\er_base_mutex.h" />
+    <ClInclude Include="source\rhi\common\er_pod_vector.h" />
+    <ClInclude Include="source\rhi\common\er_blob.h" />
+    <ClInclude Include="source\rhi\common\er_rhi_common.h" />
+    <ClInclude Include="source\rhi\common\er_shader_compiler_p.h" />
+    <ClInclude Include="source\rhi\common\er_system_p.h" />
+    <ClInclude Include="source\rhi\d3d12\er_backend_d3d12.h" />
+    <ClInclude Include="source\rhi\common\er_helper_p.h" />
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_adapter.h" />
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_command.h" />
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_descriptor.h" />
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_pipeline.h" />
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_resource.h" />
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_swapchain.h" />
+    <ClInclude Include="source\rhi\d3d12\er_rhi_d3d12.h" />
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_device.h" />
+    <ClInclude Include="source\rhi\vulkan\er_rhi_vulkan.h" />
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_adapter.h" />
+    <ClInclude Include="source\rhi\vulkan\er_backend_vulkan.h" />
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_command.h" />
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_descriptor.h" />
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_device.h" />
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_pipeline.h" />
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_resource.h" />
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_swapchain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="source\rhi\common\er_pod_vector.natvis" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\rhi\er_instance.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\vulkan\er_backend_vulkan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_adapter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\vulkan\er_rhi_vulkan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_device.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_swapchain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_command.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\d3d12\er_backend_d3d12.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_adapter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_descriptor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_device.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_swapchain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\d3d12\er_rhi_d3d12.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_command.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\common\er_shader_compiler_dxc3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\common\er_system_win.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\common\er_blob.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_pipeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_pipeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\common\er_rhi_common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\rhi\er_swapchain.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_resource.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\d3d12\er_d3d12_resource.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\common\er_base_mutex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\common\er_pod_vector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rhi\vulkan\er_vulkan_descriptor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\rhi\er_base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rhi\er_instance.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\common\er_helper_p.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\d3d12\er_backend_d3d12.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\vulkan\er_backend_vulkan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rhi\er_adapter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_adapter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\common\er_pod_vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rhi\er_device.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_device.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\vulkan\er_rhi_vulkan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rhi\er_include_all.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_swapchain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rhi\er_command.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rhi\er_resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_command.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\d3d12\er_rhi_d3d12.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_adapter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_device.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_swapchain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_command.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_descriptor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\common\er_shader_compiler_p.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\common\er_system_p.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rhi\er_shader_compiler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\common\er_blob.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_pipeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_pipeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\common\er_rhi_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rhi\er_pipeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\d3d12\er_d3d12_resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\common\er_base_mutex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rhi\er_descriptor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rhi\vulkan\er_vulkan_descriptor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="source\rhi\common\er_pod_vector.natvis" />
+  </ItemGroup>
+</Project>

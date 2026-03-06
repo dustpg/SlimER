@@ -1,2 +1,4 @@
 # SlimER
-Slim Essential Renderer, a 2D renderer layer
+Slim Essential Renderer
+
+> ⚠️ This project is currently in the prototype stage 

@@ -1,0 +1,28 @@
++-----------------------------------------------+
+|            Application Layer                  |
+|      (Game Logic, UI, Video Control)          |
++-----------------------------------------------+
+|          Rendering Logic Layer                |
+|   (2D Sprite Batcher, 3D Scene Graph)         |
++-----------------------------------------------+
+|      Rendering Hardware Interface             |
+|            RHI - Public API                   |
+|  (Device, Command List, Resources, etc)       |
++-----------------------------------------------+
+|        RHI Backend Implementation             |
+|  +-----------+  +-----------+  +-----------+  |
+|  | D3D12 Impl|  |Vulkan Impl|  |Other Impl |  |
+|  |   D3D12   |  |   Vulkan  |  |   Other   |  |
+|  +-----------+  +-----------+  +-----------+  |
++-----------------------------------------------+
+
+
+
+refs:
+https://vulkan-tutorial.com
+https://themaister.net/blog/2019/08/14/yet-another-blog-explaining-vulkan-synchronization/
+https://www.team-nutshell.dev/nutshellengine/articles/vulkan-renderpass.html
+https://www.reddit.com/r/vulkan/comments/1o866s7/new_validation_error_after_updating_lunarg_sdk/
+https://bkaradzic.github.io/bgfx/overview.html
+https://wickedengine.net/2021/04/bindless-descriptors/
+https://github.com/gpuweb/gpuweb/issues/19
