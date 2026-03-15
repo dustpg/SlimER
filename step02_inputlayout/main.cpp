@@ -245,7 +245,7 @@ pipe_t pipeline(RHI::API api,
         desc.sampleMask = ~uint32_t(0);
         desc.blend.logicOp = RHI::LOGIC_OP_COPY;
         desc.blend.attachmentCount = 1;
-        desc.blend.attachments[0].colorWriteMask = RHI::COLOR_COMPONENT_FLAG_ALL;
+        desc.blend.attachments[0].colorWriteMask = { RHI::COLOR_COMPONENT_FLAG_ALL };
 
         desc.vertexBindingCount = 1;
         desc.vertexBinding = &bindings;
@@ -317,7 +317,7 @@ int main() {
     base_ptr<RHI::IRHIInstance> instance;
     bool debug = false;
     auto api = RHI::API::D3D12;
-    //api = RHI::API::VULKAN;
+    api = RHI::API::VULKAN;
 #ifndef NDEBUG
     debug = true;
 #endif

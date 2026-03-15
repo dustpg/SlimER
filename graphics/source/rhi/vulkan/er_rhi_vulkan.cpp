@@ -496,10 +496,10 @@ VkBlendOp Slim::impl::rhi_vulkan(RHI::BLEND_OP op) noexcept
 VkColorComponentFlags Slim::impl::rhi_vulkan(RHI::COLOR_COMPONENT_FLAGS flags) noexcept
 {
     VkColorComponentFlags vkFlags = 0;
-    if (flags & RHI::COLOR_COMPONENT_FLAG_R) vkFlags |= VK_COLOR_COMPONENT_R_BIT;
-    if (flags & RHI::COLOR_COMPONENT_FLAG_G) vkFlags |= VK_COLOR_COMPONENT_G_BIT;
-    if (flags & RHI::COLOR_COMPONENT_FLAG_B) vkFlags |= VK_COLOR_COMPONENT_B_BIT;
-    if (flags & RHI::COLOR_COMPONENT_FLAG_A) vkFlags |= VK_COLOR_COMPONENT_A_BIT;
+    if (flags.flag & RHI::COLOR_COMPONENT_FLAG_R) vkFlags |= VK_COLOR_COMPONENT_R_BIT;
+    if (flags.flag & RHI::COLOR_COMPONENT_FLAG_G) vkFlags |= VK_COLOR_COMPONENT_G_BIT;
+    if (flags.flag & RHI::COLOR_COMPONENT_FLAG_B) vkFlags |= VK_COLOR_COMPONENT_B_BIT;
+    if (flags.flag & RHI::COLOR_COMPONENT_FLAG_A) vkFlags |= VK_COLOR_COMPONENT_A_BIT;
     return vkFlags;
 }
 

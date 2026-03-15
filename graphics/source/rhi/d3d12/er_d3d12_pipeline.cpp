@@ -427,7 +427,7 @@ RHI::CODE RHI::CD3D12Device::create_pipeline_layout_1_1(const PipelineLayoutDesc
     }
     totalParameterCount += pDesc->pushDescriptorCount;
 
-    if (pDesc->descriptorBuffer > 0) {
+    if (pDesc->descriptorBuffer) {
         totalParameterCount += 1;
     }
 

@@ -324,8 +324,8 @@ RHI::CODE RHI::CVulkanDevice::CreatePipelineLayout(const PipelineLayoutDesc* pDe
         }
     }
     // COPY BUFFER SAMPLER SET
-    {
-        const auto buffer = static_cast<CVulkanDescriptorBuffer*>(pDesc->descriptorBuffer);
+    if (const auto buffer = static_cast<CVulkanDescriptorBuffer*>(pDesc->descriptorBuffer)) {
+        //const auto buffer = static_cast<CVulkanDescriptorBuffer*>(pDesc->descriptorBuffer);
         // SIMPLE RTTI
         assert(&buffer->RefDevice() == this);
         descriptorSetLayout[setLayoutIndex] = buffer->GetLayoutHandle();
